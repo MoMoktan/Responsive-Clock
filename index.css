@@ -34,7 +34,7 @@
 
     
    #clock span{
-    font-size: 30px;
+    /* font-size: 30px; */
     width: 110px;
     display: inline-block;
     text-align: center;
@@ -81,7 +81,7 @@
 
      
    #clock span{
-    font-size: 19px;
+    
     width: 110px;
     display: inline;
     text-align: center;    
@@ -102,4 +102,33 @@
 
    }
     
-   
+   @media screen and (min-width: 280px) and (max-width: 653px){
+
+    #clock{
+        height: 200px;
+        width: 700px;
+        background-color: rgba(0, 0, 255, 0.329);
+        text-align: center;
+        padding-top: 55px;
+        border-radius: 30px;
+        padding-top: 30px;
+    }
+ #clock span{
+    /* font-size: 10px; */
+    width: 110px;
+    display: inline;
+    text-align: center;    
+    position: relative;
+    font-size: 50px;
+   }
+
+   #clock span::after{
+    /* content: ''; */
+    font-size: 20px;
+    font-weight: 900;
+    position: absolute;
+    bottom: -40px;
+    /* left: 10%; */
+    transform: translateX(-50%);
+   }
+   }
